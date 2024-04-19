@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . .
 
 # Build the Go application
-RUN go build -o go-first .
+RUN go build -o myapp .
 
 # Expose the port your Go application listens on
 EXPOSE 8080
 
 # Command to run the executable
-CMD ["./go-first"]
+CMD ["./myapp"]
