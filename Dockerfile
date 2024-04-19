@@ -14,4 +14,4 @@ RUN go build -o go-first .
 EXPOSE 8080
 
 # Command to run the executable
-CMD ["./myapp"]
+CMD ["./go-first"]
