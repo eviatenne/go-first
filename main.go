@@ -18,10 +18,16 @@ const (
 	dbname   = "pg_baby"
 )
 
-func main() {
-	fmt.Println("Hi")
-
+func helloHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello, World!")
 }
+
+func main() {
+	http.HandleFunc("/", helloHandler)
+	fmt.Println("Server started on :8080")
+	http.ListenAndServe(":8080", nil)
+}
+
 func main2() {
 
 	// Create a database connection
