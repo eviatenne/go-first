@@ -56,7 +56,7 @@ func main() {
 		}
 
 		// Write response
-		fmt.Fprintf(w, "User found: ID=%d, Name=%s\n", id, userName)
+		fmt.Fprintf(w, "User found!: ID=%d, Name=%s\n", id, userName)
 	})
 
 	// Start the web server
